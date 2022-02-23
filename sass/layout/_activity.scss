@@ -1,0 +1,43 @@
+.activity {
+  padding-top: 0;
+}
+
+.activity--heading {
+  margin-bottom: 50px;
+}
+
+.activity-list {
+  display: flex;
+}
+
+.activity-list__theme {
+  position: relative;
+}
+
+.activity-list__name {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-list__text {
+  position: absolute;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 370px;
+}
+
+.activity-list__item + .activity-list__item {
+  margin-left: 30px;
+}

@@ -1,0 +1,118 @@
+.footer {
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-grow: 1;
+}
+
+.footer-container__logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.footer-list__item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:nth-child(1) {
+    margin-top: 20px;
+  }
+}
+
+.footer-web {
+  color: var(--accent-color);
+}
+
+.footer-list__mail:hover,
+.footer-list__tel:hover {
+  color: var(--accent-color);
+}
+
+.footer-list__mail:focus,
+.footer-list__tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-list__address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-list__mail,
+.footer-list__tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.footer-address-network {
+  display: flex;
+}
+
+.footer__heading {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-networks {
+  display: flex;
+}
+
+.footer-container {
+  margin-right: 70px;
+}
+
+.footer-networks__link {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-networks__icon {
+  fill: var(--white-color);
+  .footer-networks__link:hover & {
+    fill: #ffffff;
+  }
+}
+
+.footer-networks__social + .footer-networks__social {
+  margin-left: 10px;
+}
