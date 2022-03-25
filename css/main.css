@@ -69,6 +69,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -236,7 +248,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -252,6 +264,18 @@ body {
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 581px;
+  }
 }
 
 .modal-close-btn {
@@ -641,7 +665,7 @@ body {
 .activity__heading,
 .command__heading {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
@@ -707,6 +731,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .command-list__item {
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -714,13 +745,66 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.command-list__item + .command-list__item {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .command-list__item {
+    width: calc(100% / 2 - 30px);
+  }
+  .command-list__item:nth-child(even) {
+    margin-left: 30px;
+  }
+  .command-list__item:nth-child(even):nth-child(2) {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-list__item {
+    width: calc(100% / 4 - 30px);
+  }
+  .command-list__item:nth-child(n + 2) {
+    margin-top: 0;
+  }
+  .command-list__item:nth-child(3) {
+    margin-left: 30px;
+  }
+}
+
 .command-list__name {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .command-list__name {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .command-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .command--heading {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .command--heading {
+    margin-bottom: 50px;
+  }
 }
 
 .command-list__heading {
