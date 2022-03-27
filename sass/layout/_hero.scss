@@ -1,28 +1,56 @@
 .hero {
   background-color: var(--background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../Images-hero/img-hero.jpg);
+    url(../Images-hero/img-hero-tel.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../Images-hero/img-hero-tel-2x.jpg);
+  }
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
-  //padding-top: 200px;
-  //padding-bottom: 200px;
-  padding-top: 118px;
-  padding-bottom: 198px;
+  width: 100%;
+  padding: 118px 0 198px 0;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../Images-hero/img-hero-tab.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../Images-hero/img-hero-tab-2x.jpg);
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../Images-hero/img-hero.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../Images-hero/img-hero-2x.jpg);
+    }
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   color: var(--white-color);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px auto;
+  @media screen and(min-width:1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }

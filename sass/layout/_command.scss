@@ -1,6 +1,6 @@
 .command {
   background: #f5f4fa;
-  @include desk {
+  @media screen and(min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -17,7 +17,7 @@
   & + & {
     margin-top: 30px;
   }
-  @include tab {
+  @media screen and(min-width:768px) {
     width: calc(100% / 2 - 30px);
     &:nth-child(even) {
       margin-left: 30px;
@@ -27,7 +27,7 @@
     }
   }
 
-  @include desk {
+  @media screen and(min-width:1200px) {
     width: calc(100% / 4 - 30px);
     &:nth-child(n + 2) {
       margin-top: 0;
@@ -40,14 +40,14 @@
 
 .command-list__name {
   padding-top: 30px;
-  @include desk {
+  @media screen and(min-width:1200px) {
     padding-bottom: 30px;
   }
   padding-bottom: 24px;
 }
 
 .command-list {
-  @include tab {
+  @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,7 +55,7 @@
 }
 
 .command--heading {
-  @include desk {
+  @media screen and(min-width:1200px) {
     margin-bottom: 50px;
   }
   margin-bottom: 30px;

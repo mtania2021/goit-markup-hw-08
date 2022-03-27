@@ -54,13 +54,70 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="btn-menu-open">
+                <svg width="24" height="16">
+                    <use href="./Images/icon-menu.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu">
+            <div class="container">
+                <div class="mob-menu-close"> 
+                    <button type="button" class="btn-menu-close">
+                        <svg width="18.67" height="18.67">
+                            <use href="./Images/icon-menu.svg#menu-icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-list__item mob-studio-portfolio">
+                        <a href="" class="mob-menu-list__link">Студия</a>
+                    </li>
+                    <li class="mob-menu-list__item mob-studio-portfolio">
+                        <a href="./portfolio.html" class="mob-menu-list__link">Портфолио</a>
+                    </li>
+                    <li class="mob-menu-list__item mob-studio-portfolio">
+                        <a href="" class="mob-menu-list__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="mob-menu-contacts">
+                    <li class="mob-menu-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="mob-menu-contacts__link">
+                            <span class="mob-menu-contacts-name">info@devstudio.com</span>
+                        </a>
+                    </li>
+                    <li class="mob-menu-contacts__item">
+                        <a href="tel:+380961111111" class="mob-menu-contacts__link">
+                            <span class="mob-menu-contacts-name">+38 096 111 11 11</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="mob-menu-networks">
+                    <li class="mob-menu-networks__item">
+                        <a href="Instagram" class="nob-menu-networks__link">Instagram</a>
+                    </li>
+                    <li class="mob-menu-networks__item">
+                        <a href="Twitter" class="nob-menu-networks__link">Twitter</a>
+                    </li>
+                    <li class="mob-menu-networks__item">
+                        <a href="Facebook" class="nob-menu-networks__link">Facebook</a>
+                    </li>
+                    <li class="mob-menu-networks__item">
+                        <a href="LinkedIn" class="nob-menu-networks__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
     <main>
         <section class="hero section">
             <div class="container">
-                <h1 class="hero__title">Эффективные решения вашего бизнеса</h1>
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
                 
             </div>
@@ -144,7 +201,11 @@
                 <h2 class="command__heading command--heading">Наша команда</h2>
                 <ul class="command-list">
                     <li class="command-list__item">
-                        <img src="./Images/team-card-1.jpg" alt="Игорь Демьяненко" width="270">
+                        <img srcset="./Images/team-card-1.jpg 1x, 
+                        ./Images/team-card-1-2x.jpg 2x" 
+                        src="./Images/team-card-1.jpg" 
+                        alt="Игорь Демьяненко" 
+                        width="270">
                         <div class="command-list__name">
                             <h3 class="command-list__heading">Игорь Демьяненко</h3>
                             <p class="command-list__paragraph"><span lang="en">Product Designer</span></p>
@@ -182,7 +243,11 @@
 
                     </li>
                     <li class="command-list__item">
-                        <img src="./Images/team-card-2.jpg" alt="Ольга Репина" width="270">
+                        <img srcset="./Images/team-card-2.jpg 1x, 
+                        ./Images/team-card-2-2x.jpg 2x"
+                        src="./Images/team-card-2.jpg" 
+                        alt="Ольга Репина" 
+                        width="270">
                         <div class="command-list__name">
                             <h3 class="command-list__heading">Ольга Репина</h3>
                             <p class="command-list__paragraph"><span lang="en">Frontend Developer</span></p>
@@ -219,7 +284,11 @@
                         </div>
                     </li>
                     <li class="command-list__item">
-                        <img src="./Images/team-card-3.jpg" alt="Николай Тарасов" width="270">
+                        <img srcset="./Images/team-card-3.jpg 1x, 
+                        ./Images/team-card-3-2x.jpg 2x"
+                        src="./Images/team-card-3.jpg" 
+                        alt="Николай Тарасов" 
+                        width="270">
                         <div class="command-list__name">
                             <h3 class="command-list__heading">Николай Тарасов</h3>
                             <p class="command-list__paragraph"><span lang="en">Marketing</span></p>
@@ -256,7 +325,11 @@
                         </div>
                     </li>
                     <li class="command-list__item">                    
-                        <img src="./Images/team-card-4.jpg" alt="Михаил Ермаков" width="270">
+                        <img srcset="./Images/team-card-4.jpg 1x, 
+                        ./Images/team-card-4-2x.jpg 2x"
+                        src="./Images/team-card-4.jpg" 
+                        alt="Михаил Ермаков" 
+                        width="270">
                         <div class="command-list__name">
                             <h3 class="command-list__heading">Михаил Ермаков</h3>
                             <p class="command-list__paragraph"><span lang="en">UI Designer</span></p>
