@@ -68,7 +68,13 @@
 }
 
 .footer-address-network {
-  display: flex;
+  @include tel {
+    text-align: center;
+  }
+  @include desk {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .footer__heading {
@@ -78,14 +84,39 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @include tel {
+    margin-top: 60px;
+  }
+  @include tab {
+    margin-top: 0;
+  }
 }
 
 .footer-networks {
   display: flex;
+  @include tel {
+    justify-content: center;
+  }
 }
 
 .footer-container {
-  margin-right: 70px;
+  @include tab {
+    margin-right: 165px;
+  }
+  @include desk {
+    margin-right: 70px;
+  }
+}
+
+.footer-tel {
+  @include tab {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px auto;
+  }
+  @include desk {
+    margin-bottom: 0;
+  }
 }
 
 .footer-networks__link {

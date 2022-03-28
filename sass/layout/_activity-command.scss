@@ -1,7 +1,9 @@
 .activity__heading,
 .command__heading {
   font-weight: bold;
-  //font-size: 36px;
+  @include desk {
+    font-size: 36px;
+  }
   font-size: 28px;
   line-height: 1.16;
   text-align: center;
