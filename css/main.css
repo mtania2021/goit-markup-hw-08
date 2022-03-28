@@ -1413,10 +1413,8 @@ body {
   transition-property: color;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-address-network {
-    text-align: center;
-  }
+.footer-address-network {
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1435,12 +1433,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 480px) {
-  .footer__heading {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1453,14 +1446,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (min-width: 480px) {
-  .footer-networks {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {

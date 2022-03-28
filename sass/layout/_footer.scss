@@ -68,9 +68,7 @@
 }
 
 .footer-address-network {
-  @include tel {
-    text-align: center;
-  }
+  text-align: center;
   @include desk {
     display: flex;
     text-align: left;
@@ -84,9 +82,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  @include tel {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
   @include tab {
     margin-top: 0;
   }
@@ -94,9 +90,7 @@
 
 .footer-networks {
   display: flex;
-  @include tel {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .footer-container {
