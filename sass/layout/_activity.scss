@@ -1,11 +1,6 @@
 .activity {
+  display: none;
   padding-top: 0;
-  @include tel {
-    display: none;
-  }
-  @include tab {
-    display: none;
-  }
   @include desk {
     display: block;
   }
