@@ -121,7 +121,7 @@ body {
 }
 
 .portfolio-btn-list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,8 +132,18 @@ body {
           justify-content: left;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-btn-list {
+    margin-bottom: 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -145,15 +155,20 @@ body {
 
 .portfolio-btn-list__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .portfolio-btn-list__item:nth-last-child(1) {
   margin-right: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio-btn-list__item:nth-last-child(3) {
-    margin-bottom: 15px;
+.portfolio-btn-list__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list__item {
+    margin-bottom: 0;
   }
 }
 
@@ -1526,15 +1541,14 @@ body {
   border-bottom-color: #ececec;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: -30px;
-    margin-bottom: -30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -1545,15 +1559,24 @@ body {
   border: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 1200px) {
+.portfolio-item:nth-child(9) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
   .portfolio-item {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
 }
 
-.portfolio-item:nth-child(9) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    width: calc(100% / 3 - 30px);
+  }
+  .portfolio-item:nth-last-child(-n + 7) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-item__name {
