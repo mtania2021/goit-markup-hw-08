@@ -86,6 +86,9 @@
   @include tab {
     margin-top: 0;
   }
+  @include desk {
+    text-align: left;
+  }
 }
 
 .footer-networks {
