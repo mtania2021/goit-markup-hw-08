@@ -11,7 +11,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  padding: 118px 0 198px 0;
+  padding: 118px 0 118px 0;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -22,6 +22,9 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../Images-hero/img-hero-tab-2x.jpg);
+    }
+    @include desk {
+      padding: 118px 0 198px 0;
     }
   }
 

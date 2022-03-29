@@ -82,7 +82,6 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 60px;
   @include tab {
     margin-top: 0;
   }
@@ -97,8 +96,9 @@
 }
 
 .footer-container {
+  margin-bottom: 60px;
   @include tab {
-    margin-right: 165px;
+    margin-bottom: 0;
   }
   @include desk {
     margin-right: 70px;
@@ -106,9 +106,10 @@
 }
 
 .footer-tel {
+  margin-bottom: 60px;
   @include tab {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 auto 60px auto;
   }
   @include desk {

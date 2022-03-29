@@ -17,15 +17,15 @@
   font-size: 24px;
   line-height: calc(24 / 28);
   letter-spacing: 0.03em;
+  @include tab {
+    margin-right: 88px;
+  }
   @include desk {
     font-size: 26px;
     line-height: 1.19;
-  }
-  color: currentColor;
-  margin-right: 88px;
-  @include desk {
     margin-right: 93px;
   }
+  color: currentColor;
 }
 
 .logo-web {
@@ -111,14 +111,12 @@
     & + & {
       margin-left: 0;
     }
-    &:nth-child(1) {
-      margin-bottom: 10px;
-    }
   }
   @include desk {
     &:nth-child(1) {
       margin-right: 30px;
-      margin-bottom: -3px;
+      display: flex;
+      align-items: center;
     }
   }
 }
@@ -209,6 +207,14 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.mob-menu-portfolio-link {
+  color: #212121;
+}
+
+.mob-menu-portfolio-link-stile {
+  color: var(--accent-color);
 }
 
 .mob-menu-contacts {
